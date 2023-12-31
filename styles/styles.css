@@ -1,0 +1,132 @@
+/* GENERAL */
+
+* {
+  box-sizing: border-box; /* set how sizes are calculated */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif; /* use this font for body text content */
+}
+
+/* create variables for colors used */
+:root { 
+  --blue: #107CF1;
+  --light-blue: #BDD3EF;
+}
+
+/* HEADER SECTION */
+
+.header {
+  display: flex;
+  width: 100%;
+  background-color: var(--blue);
+  padding: 0px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 150px;
+}
+
+a {
+  color: black;
+  padding: 20px;
+}
+
+a:hover {
+  color: var(--light-blue);
+}
+
+/* ADD LECTURE FORM */
+
+.add-lecture {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px;
+    background-color: #f5f5f5;
+}
+
+.lecture-input{
+    width: 200px;
+    border-radius: 10px;
+    border: 0px;
+    padding: 10px;
+}
+
+.gradescale {
+  width: 100px;
+}
+
+.add-btn{
+    margin: 10px;
+    padding: 10px 40px;
+    background-color: var(--blue);
+    color: var(--light-blue);
+    border-radius: 10px;
+    border: 0px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: var(--light-blue);
+  color: var(--blue);
+}
+
+  /* TABLE STYLES */
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: var(--light-blue);
+    font-weight: bold;
+  }
+  
+  /* TABLE ROWS */
+  
+  tr:nth-child(even) {
+    background-color: #f5f5f5; /* background color for even numbered rows */
+  }
+    
+  td:last-child {
+    text-align: center;
+  }
+
+  #add_btn {
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+button {
+  padding: 10px;
+  background-color: var(--blue);
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* make header responsive */
+
+@media (max-width: 768px) {
+  .header {
+    position: relative;
+    width: auto;
+  }
+}
