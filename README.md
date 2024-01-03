@@ -7,3 +7,6 @@ This is a lecture management system for lecturers to manage lectures and student
   - Viewing scores 
   - Managing students
   - Viewing lecture details
+
+## Live Website
+  https://nesimozgun.github.io/WebDevFinal/
