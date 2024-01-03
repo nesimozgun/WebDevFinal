@@ -54,7 +54,6 @@ existingLectures.forEach(lecture => {
 
 });
 
-
 // create elements for inputs
 function createTableRow(lecture) {
 const row = document.createElement("tr");
@@ -69,7 +68,6 @@ row.appendChild(nameCell);
 
 const gradesCell = document.createElement("td");
 gradesCell.textContent = lecture.scale;
-gradesCell.style.textAlign = "center";
 row.appendChild(gradesCell);
 
 const deleteCell = document.createElement("td");

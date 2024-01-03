@@ -64,7 +64,7 @@ a:hover {
     margin: 10px;
     padding: 10px 40px;
     background-color: var(--blue);
-    color: var(--light-blue);
+    color: white;
     border-radius: 10px;
     border: 0px;
     width: 100px;

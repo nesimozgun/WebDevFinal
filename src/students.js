@@ -28,7 +28,7 @@ function generateId() {
     const existingStudents = JSON.parse(localStorage.getItem("students")) || [];
     return existingStudents.length + 1;
 }
-
+ 
 // add a new student
 const newStudent = {
   id: generateId(),
