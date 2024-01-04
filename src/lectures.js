@@ -33,7 +33,6 @@ const newLecture = {
     scale: gradescaleInput.value,
   };
 
-
 // add the new lecture to the existing array
 existingLectures.push(newLecture);
 

@@ -9,18 +9,17 @@ fetch("../database/students.json")
     const row = createTableRow(student);
     tbody.appendChild(row);
   });
-
-  console.log("Initial data loaded:", data);
 })
 .catch(error => console.error("Error:", error));
 
-const saveButton = document.querySelector(".lecture_save_btn");
+const saveButton = document.querySelector(".add-btn");
 let existingStudents = [];
 
 saveButton.addEventListener("click", () => {
-const studentNameInput = document.querySelector("#name");
-const studentSurnameInput = document.querySelector("#surname");
-const studentSchoolIdInput = document.querySelector("#student_id");
+const studentNameInput = document.querySelector(".add-lecture #name");
+const studentSurnameInput = document.querySelector(".add-lecture #surname");
+const studentSchoolIdInput = document.querySelector(".add-lecture #student_id");
+const gradescaleInput = document.querySelector(".gradescale");
 
 existingStudents = JSON.parse(localStorage.getItem("students")) || [];
 
@@ -28,7 +27,7 @@ function generateId() {
     const existingStudents = JSON.parse(localStorage.getItem("students")) || [];
     return existingStudents.length + 1;
 }
- 
+
 // add a new student
 const newStudent = {
   id: generateId(),
@@ -115,8 +114,6 @@ return row;
 function deleteStudent(studentId) {
 
 const newData = localStorage.getItem("students");
-console.log("existingStudents:", newData)
-console.log("studentId:", studentId)
 
 existingStudents = newData.filter((student) => student.id != studentId);
 }

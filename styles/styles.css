@@ -105,14 +105,6 @@ a:hover {
     text-align: center;
   }
 
-  #add_btn {
-    background-color: green;
-    color: white;
-    border: 1px solid green;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-
 button {
   padding: 10px;
   background-color: var(--blue);
@@ -124,7 +116,7 @@ button {
 
 /* make header responsive */
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .header {
     position: relative;
     width: auto;
